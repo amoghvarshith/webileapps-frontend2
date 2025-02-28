@@ -24,7 +24,7 @@ function CreateAccountPage() {
 
 
     axios
-      .post('https://webileapps-backend.onrender.com', { firstname, username, password, mobile })
+      .post('https://webileapps-backend2.onrender.com', { firstname, username, password, mobile })
       .then((response) => {
         if (response.data && response.data._id) {
           setSuccessMessage('Account created successfully! You can now log in.');

@@ -27,7 +27,7 @@ function LoginPage({ onLogin }) {
       }
     } else {
       try {
-        const response = await axios.post('https://webileapps-backend2.onrender.com', {
+        const response = await axios.post('https://webileapps-backend2.onrender.com/auth/login', {
           username,
           password,
         });
